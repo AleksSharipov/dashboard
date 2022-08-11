@@ -1,0 +1,69 @@
+@import '../../scss/variables';
+
+.container {
+  background: linear-gradient(to bottom, 
+  $blue 0%,
+  $blue 40%,
+  #F8F9FA 40%,
+  #F8F9FA 100%,
+  );
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 10px;
+  padding: 65px 55px;
+
+  h2 {
+    font-weight: 800;
+    font-size: 32px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;    
+
+    .fieldset {
+      display: flex;
+      flex-flow: column nowrap;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    
+    .fieldset label {
+      position: absolute;
+      top: -25px;
+      left: -10px;
+      background-color: #fff;
+      padding: 0 10px;
+      color: #CED4DA;
+    }
+    
+    .fieldset input {
+      padding: 14px 20px;
+      border: 1px solid #CED4DA;
+      border-radius: 10px;
+    }
+
+    button {
+      border: none;
+      padding: 14px 0;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+      background-color: $blue;
+      margin-top: -10px;
+    }
+  }
+}
