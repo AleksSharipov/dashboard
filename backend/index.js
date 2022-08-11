@@ -6,10 +6,12 @@ import { registerValidaion } from './validations/auth.js';
 
 import checkAuth from './middleware/checkAuth.js';
 
-import * as UserController from './controllers/UserController.js'
+import * as UserController from './controllers/UserController.js';
+
+import { mongoApi } from './utils/mongo.js';
 
 mongoose
-  .connect('mongodb+srv://admin:6277@cluster0.uoml01e.mongodb.net/dashboard?retryWrites=true&w=majority')
+  .connect(mongoApi)
   .then(() => console.log('connect DB'))
   .catch((err) => console.log(`DB error: ${err}`))
 
