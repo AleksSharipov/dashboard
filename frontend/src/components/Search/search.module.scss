@@ -1,0 +1,23 @@
+@import '../../scss/variables.scss';
+
+.search {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+
+  input {
+    width: 100%;
+    border: 1px solid $grey;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+  }
+
+  svg {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: 13px;
+    fill: #C4CACD;
+  }
+}
