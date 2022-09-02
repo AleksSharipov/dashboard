@@ -38,6 +38,7 @@ export const register = async (request, response) => {
 
     const { passwordHash, ...userData } = user._doc
 
+
     response.json({
       ...userData,
       token
